@@ -15,7 +15,7 @@ module.exports = {
     },
 
     verifyButton() {
-        I.seeTextEquals(loginData.buttonLabel, loginLocator.buttonLabel); I
+        I.seeTextEquals(loginData.buttonLabel, loginLocator.buttonLabel);
     },
 
     enterDetails(data, locators) {
