@@ -1,4 +1,3 @@
-
 const I = require('../../customStep');
 const { loginData } = require('../../data/login/loginData');
 const { loginLocator } = require('../../locator/login/loginLocator');

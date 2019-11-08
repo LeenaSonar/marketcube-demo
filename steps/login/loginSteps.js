@@ -1,7 +1,6 @@
 const loginPage = require('../../pages/login/loginPage');
 const { loginData } = require('../../data/login/loginData');
 const { loginLocator } = require('../../locator/login/loginLocator');
-
 const { email, password } = loginData;
 const { emailLocator, passwordLocator } = loginLocator;
 
