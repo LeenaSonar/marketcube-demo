@@ -15,7 +15,6 @@ exports.config = {
   bootstrap: null,
   mocha: {},
   name: 'marketcube-demo',
-
   gherkin: {
     features: './features/*.feature',
     steps: [

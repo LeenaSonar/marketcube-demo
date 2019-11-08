@@ -3,11 +3,9 @@ const I = require('../../customStep');
 const { loginData } = require('../../data/login/loginData');
 const { loginLocator } = require('../../locator/login/loginLocator');
 
-
 module.exports = {
     openApp() {
         I.amOnPage('https://test.marketcube.io/login');
-
     },
 
     verifyLabel() {

@@ -1,13 +1,12 @@
 Feature: Allow user to login into marketcube
 
-    AS a user,
+    As a user,
     I want to login into marketcube
 
-    # Background: Seller-user goes to marketcube login page
-
+    Background: Seller- User goes to marketcube url
+        Given User hits marketcube url
 
     Scenario: Seller-User verify the components
-        Given User hits marketcube url
         When User verifies the label of all fields
         And User verifies the signIn button
 
