@@ -1,7 +1,7 @@
 module.exports = {
-    loginData: {
+    fbLoginData: {
         buttonLabel: 'Login',
-        email: 'lee.sonar@successive.tech',
+        email: 'leena.sonar@successive.tech',
         password: '987654321',
         usernameLabel: 'Username',
     }

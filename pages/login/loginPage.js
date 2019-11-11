@@ -20,6 +20,8 @@ module.exports = {
     },
 
     clickButton() {
+        I.waitForElement(loginLocator.loginButton, 10)
         I.click(loginLocator.loginButton);
     },
 }
+

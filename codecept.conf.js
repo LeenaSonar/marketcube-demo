@@ -6,7 +6,8 @@ exports.config = {
       url: 'http://localhost',
       browser: 'chrome',
       restart: false,
-      smartWait: 12000,
+      smartWait: 10000,
+      waitForTimeout: 60000,
     }
   },
   include: {
@@ -16,8 +17,11 @@ exports.config = {
   mocha: {},
   name: 'marketcube-demo',
   gherkin: {
-    features: './features/*.feature',
+    // features: './features/fblogin.feature',
+    // features: './features/*.feature',
+    features: './features/login.feature',
     steps: [
+      // './steps/fblogin/fbloginSteps.js',
       './steps/login/loginSteps.js',
     ]
   },
