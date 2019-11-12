@@ -1,7 +1,7 @@
 module.exports = {
     loginData: {
         buttonLabel: 'Login',
-        email: 'lee.sonar@successive.tech',
+        email: 'shubham.jain1@successive.tech',
         password: '987654321',
         usernameLabel: 'Username',
     }

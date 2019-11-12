@@ -8,6 +8,11 @@ exports.config = {
       restart: false,
       smartWait: 10000,
       waitForTimeout: 60000,
+      desiredCapabilities: {
+        chromeOptions: {
+          args: [ /*"--headless",*/ "--disable-gpu", "--window-size=1200,1000", "--no-sandbox", "incognito"]
+        }
+      }
     }
   },
   include: {
@@ -17,12 +22,10 @@ exports.config = {
   mocha: {},
   name: 'marketcube-demo',
   gherkin: {
-    // features: './features/fblogin.feature',
-    // features: './features/*.feature',
-    features: './features/login.feature',
+    features: './features/*/*.feature',
     steps: [
-      // './steps/fblogin/fbloginSteps.js',
       './steps/login/loginSteps.js',
+      './steps/venderstep/venderSteps.js',
     ]
   },
   plugins: {
