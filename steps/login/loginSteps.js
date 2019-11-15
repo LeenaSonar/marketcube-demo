@@ -26,5 +26,4 @@ When('User enters the password', () => {
 
 Then('User clicks on signIn button', () => {
     loginPage.clickButton();
-}
-);
+});

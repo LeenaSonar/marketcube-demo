@@ -1,4 +1,5 @@
 Feature: Allow user to login into marketcube
+
     As a user,
     I want to login into marketcube
 

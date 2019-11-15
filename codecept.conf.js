@@ -22,10 +22,11 @@ exports.config = {
   mocha: {},
   name: 'marketcube-demo',
   gherkin: {
-    features: './features/*/*.feature',
+    features: './features/*/vendor.feature',
+
     steps: [
       './steps/login/loginSteps.js',
-      './steps/venderstep/venderSteps.js',
+      './steps/vendorstep/vendorSteps.js',
     ]
   },
   plugins: {
