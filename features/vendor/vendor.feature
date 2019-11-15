@@ -22,5 +22,5 @@ Feature: Allow user to create vendor into marketcube
         And User enters city
         And User enters country
         And User enters postal code
-        And User clicks on submit button get success message
+        And User should clicks on submit button to get success
 

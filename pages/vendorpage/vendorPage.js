@@ -17,6 +17,7 @@ module.exports = {
     },
     submit(locator) {
         I.click(locator);
+        // I.see(locator);
         I.see('This Field is Required');
         I.see('This Field is Required');
         I.see('This Field is Required');
@@ -27,6 +28,7 @@ module.exports = {
         I.see('Street Address is Required');
         I.see('City is Required');
         I.see('Country is Required');
+        I.wait(10)
         I.see('User registered successfully');
     }
 

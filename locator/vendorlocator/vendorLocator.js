@@ -14,6 +14,7 @@ module.exports = {
         buttonSubmitLocator: '#createSubmitButton',
         submitForm: '//button//span//span[text()="Submit"]',
         selectVendorLocator: '#createVendorType',
+        verifyLocator: '//*[@id="Banner3Content"]/p',
 
     }
 }

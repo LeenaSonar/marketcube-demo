@@ -49,9 +49,16 @@ When('User enters postal code', () => {
     vendorPage.fillInputField(vendorLocator.postalCodeLocator, vendorData.postalCode);
 });
 
-Then('User clicks on submit button get success message', () => {
-    vendorPage.submit(vendorLocator.submitForm);
+When('User should clicks on submit button to get success ', () => {
+    vendorPage.clickVendor(vendorLocator.submitForm);
 });
+
+// Then(' User click to view vendor ', () => {
+//     vendorPage.clickVendor(vendorLocator.submitForm);
+// });
+// Then('check if vendor add successfully or not .', () => {
+//     vendorPage.submit(vendorLocator.verifyLocator);
+// })
 
 
 
