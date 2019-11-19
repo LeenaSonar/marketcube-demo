@@ -49,18 +49,15 @@ When('User enters postal code', () => {
     vendorPage.fillInputField(vendorLocator.postalCodeLocator, vendorData.postalCode);
 });
 
-When('User should clicks on submit button to get success ', () => {
-    vendorPage.clickVendor(vendorLocator.submitForm);
+When('User click on Submit Button and user get message', () => {
+    vendorPage.clickVendor(vendorLocator.buttonSubmitLocator)
 });
 
-// Then(' User click to view vendor ', () => {
-//     vendorPage.clickVendor(vendorLocator.submitForm);
-// });
-// Then('check if vendor add successfully or not .', () => {
-//     vendorPage.submit(vendorLocator.verifyLocator);
-// })
 
+When('User goes on View Vendor', () => {
+    vendorPage.clickVendor(vendorLocator.viewVendorLocator)
 
-
-
-
+});
+When('User goes on search tab to search vender', () => {
+    vendorPage.searchVendor();
+});
