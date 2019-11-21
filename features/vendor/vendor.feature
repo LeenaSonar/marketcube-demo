@@ -9,7 +9,7 @@ Feature: Allow user to create vendor into marketcube
         When User enters the password
         Then User clicks on signIn button
 
-    Scenario: Seller - User redirect create vendor page
+    Scenario: Seller - User create vender.
         When User goes on vendor page
         Then User goes to Add vendor page
         And User select the create vendor yourself using form option
@@ -26,6 +26,13 @@ Feature: Allow user to create vendor into marketcube
         And User goes on View Vendor
         And User goes on search tab to search vender
 
+    Scenario: User invite vendor in bulk
+        When User goes on vendor page
+        Then User goes to Add vendor page
+        And User select Bulk create vendors yourself using a CSV
+        And User will select CSV file
+        And User enter subject
+        And User write message
 
 
 

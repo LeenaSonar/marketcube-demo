@@ -19,5 +19,8 @@ module.exports = {
         viewVendorLocator: '//span[@class="Polaris-Button__Text"][contains(.,"Click here to view Vendors.")]',
         searchFieldLocator: '//input[contains(@placeholder,"Search vendors")]',
         searchedItemLocator: '(//button[@type="button"][contains(.,"Leey3")])[1]',
+        selectCSVLocator: '//input[@name="fileUploadfile"]',
+        subjectLocator: '#subject',
+        messageLocator: '#csvMessage',
     }
 }

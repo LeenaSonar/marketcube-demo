@@ -53,7 +53,6 @@ When('User click on Submit Button and user get message', () => {
     vendorPage.clickVendor(vendorLocator.buttonSubmitLocator)
 });
 
-
 When('User goes on View Vendor', () => {
     vendorPage.clickVendor(vendorLocator.viewVendorLocator)
 
@@ -61,3 +60,18 @@ When('User goes on View Vendor', () => {
 When('User goes on search tab to search vender', () => {
     vendorPage.searchVendor();
 });
+When('User select Bulk create vendors yourself using a CSV', () => {
+    vendorPage.selectChoice(vendorLocator.selectVendorLocator, vendorData.selectInviteVendor)
+});
+
+When('User will select CSV file', () => {
+    vendorPage.chooseCSV();
+});
+When('User enter subject ', () => {
+    vendorPage.fillInputField(vendorLocator.subjectLocator, vendorData.subjectData)
+
+})
+When('User write message ', () => {
+    vendorPage.fillInputField(vendorLocator.messageLocator, vendorData.messageData)
+
+})
