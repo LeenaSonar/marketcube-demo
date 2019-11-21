@@ -1,0 +1,28 @@
+{
+  "name": "marketcube-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeenaSonar/marketcube-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeenaSonar/marketcube-demo/issues"
+  },
+  "homepage": "https://github.com/LeenaSonar/marketcube-demo#readme",
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^5.15.0",
+    "codeceptjs": "^2.3.5"
+  },
+  "dependencies": {
+    "@wdio/sauce-service": "^5.14.0",
+    "webdriverio": "^5.16.2"
+  }
+}
